@@ -2,7 +2,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-// Removed LoadingSpinner import
 
 export function LoadingScreen() {
   const dotVariants = {
@@ -65,7 +64,7 @@ export function LoadingScreen() {
             y="5"
             width="12"
             height="12"
-            fill="hsl(var(--primary))"
+            fill="hsl(var(--accent))" 
             variants={dotVariants}
             initial="initial"
             animate="animate"
