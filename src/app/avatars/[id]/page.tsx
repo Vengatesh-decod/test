@@ -1,3 +1,4 @@
+
 import { getAvatarById } from '@/data/avatars';
 import { generateAvatarDescription } from '@/ai/flows/generate-avatar-description';
 import Image from 'next/image';
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: AvatarDetailPageProps): Promi
     };
   }
   return {
-    title: `${avatar.name} | CryptoPunks Showcase`,
+    title: `${avatar.name} | CryptoPunks`,
     description: `Details for ${avatar.name}, including traits and AI-generated description.`,
   };
 }

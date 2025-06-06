@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
@@ -5,8 +6,8 @@ import { Footer } from '@/components/layout/Footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'CryptoPunks Showcase',
-  description: 'A showcase of CryptoPunks-style avatars with AI-generated descriptions.',
+  title: 'CryptoPunks',
+  description: 'A showcase of CryptoPunks with AI-generated descriptions.',
 };
 
 export default function RootLayout({

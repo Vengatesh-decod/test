@@ -1,9 +1,15 @@
+'use client';
+
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center space-x-2 group" aria-label="CryptoPunks Showcase Home">
-      <svg
+    <Link href="/" className="flex items-center space-x-2 group" aria-label="CryptoPunks Home">
+      <motion.svg
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         width="40"
         height="40"
         viewBox="0 0 100 100"
@@ -28,10 +34,15 @@ export function Logo() {
         <rect x="20" y="60" width="20" height="20" fill="url(#logoGradient)" opacity="0.6"/>
         <rect x="40" y="60" width="20" height="20" fill="hsl(var(--accent))" opacity="0.9"/>
         <rect x="60" y="60" width="20" height="20" fill="url(#logoGradient)" />
-      </svg>
-      <span className="font-headline text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-        CryptoPunks Showcase
-      </span>
+      </motion.svg>
+      <motion.span
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="font-headline text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"
+      >
+        CryptoPunks
+      </motion.span>
     </Link>
   );
 }
