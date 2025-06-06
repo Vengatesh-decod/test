@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,94 +9,94 @@ body {
 
 @layer base {
   :root {
-    --background: 285 74% 6%; /* #14031A - Very dark purple */
-    --foreground: 285 10% 95%; /* Light purple/white for text */
+    --background: 270 40% 10%; /* Very dark, slightly desaturated purple */
+    --foreground: 270 20% 92%; /* Light lavender */
 
-    --card: 285 50% 10%; /* Slightly lighter purple for cards */
-    --card-foreground: 285 10% 95%;
+    --card: 270 35% 15%; /* Dark purple card */
+    --card-foreground: 270 20% 92%;
 
-    --popover: 285 50% 8%; /* Darker for popovers */
-    --popover-foreground: 285 10% 95%;
+    --popover: 270 40% 8%; /* Dark purple popover */
+    --popover-foreground: 270 20% 92%;
 
-    --primary: 285 87% 37%; /* #A020F0 - Saturated purple */
-    --primary-foreground: 285 10% 95%; /* Light text on primary */
+    --primary: 275 75% 55%; /* Vibrant Purple (Violet) */
+    --primary-foreground: 275 20% 96%; /* Very light lavender for contrast */
 
-    --secondary: 285 60% 25%; /* Muted purple for secondary elements */
-    --secondary-foreground: 285 10% 95%;
+    --secondary: 330 60% 45%; /* Muted Pink */
+    --secondary-foreground: 330 15% 95%;
 
-    --muted: 285 40% 15%; /* Darker muted purple */
-    --muted-foreground: 285 10% 70%; /* Lighter muted text */
+    --muted: 270 25% 25%; /* Muted dark purple */
+    --muted-foreground: 270 15% 65%; /* Lighter muted purple text */
 
-    --accent: 183 100% 74%; /* #7DF9FF - Electric blue */
-    --accent-foreground: 183 100% 20%; /* Darker blue/black text on accent */
+    --accent: 330 95% 65%; /* Bright Pink */
+    --accent-foreground: 330 40% 15%; /* Dark contrast for pink */
     
-    --destructive: 0 72% 51%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 285 50% 15%; /* Slightly lighter border than card */
-    --input: 285 50% 15%; /* Input background, same as border */
-    --ring: 183 100% 74%; /* Accent color for focus rings */
+    --border: 270 30% 22%; /* Purple border */
+    --input: 270 30% 22%; /* Purple input background */
+    --ring: 330 95% 65%; /* Pink for focus rings */
     
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 320 80% 70%; /* Pink */
+    --chart-2: 270 70% 65%; /* Violet */
+    --chart-3: 300 75% 60%; /* Magenta/Purple */
+    --chart-4: 340 85% 75%; /* Lighter Pink */
+    --chart-5: 260 65% 55%; /* Indigo/Darker Violet */
     --radius: 0.5rem;
 
-    --sidebar-background: 285 70% 8%;
-    --sidebar-foreground: 285 10% 90%;
-    --sidebar-primary: 183 100% 74%;
-    --sidebar-primary-foreground: 183 100% 20%;
-    --sidebar-accent: 285 60% 15%;
-    --sidebar-accent-foreground: 285 10% 95%;
-    --sidebar-border: 285 50% 20%;
-    --sidebar-ring: 183 100% 74%;
+    --sidebar-background: 270 45% 12%;
+    --sidebar-foreground: 270 20% 90%;
+    --sidebar-primary: 330 95% 65%;
+    --sidebar-primary-foreground: 330 40% 15%;
+    --sidebar-accent: 275 50% 30%;
+    --sidebar-accent-foreground: 275 15% 95%;
+    --sidebar-border: 270 35% 25%;
+    --sidebar-ring: 330 95% 65%;
   }
 
   .dark {
-    --background: 285 74% 6%; /* #14031A - Very dark purple */
-    --foreground: 285 10% 95%; /* Light purple/white for text */
+    --background: 270 40% 10%; /* Very dark, slightly desaturated purple */
+    --foreground: 270 20% 92%; /* Light lavender */
 
-    --card: 285 50% 10%; /* Slightly lighter purple for cards */
-    --card-foreground: 285 10% 95%;
+    --card: 270 35% 15%; /* Dark purple card */
+    --card-foreground: 270 20% 92%;
 
-    --popover: 285 50% 8%; /* Darker for popovers */
-    --popover-foreground: 285 10% 95%;
+    --popover: 270 40% 8%; /* Dark purple popover */
+    --popover-foreground: 270 20% 92%;
 
-    --primary: 285 87% 37%; /* #A020F0 - Saturated purple */
-    --primary-foreground: 285 10% 95%; /* Light text on primary */
+    --primary: 275 75% 55%; /* Vibrant Purple (Violet) */
+    --primary-foreground: 275 20% 96%; /* Very light lavender for contrast */
 
-    --secondary: 285 60% 25%; /* Muted purple for secondary elements */
-    --secondary-foreground: 285 10% 95%;
+    --secondary: 330 60% 45%; /* Muted Pink */
+    --secondary-foreground: 330 15% 95%;
 
-    --muted: 285 40% 15%; /* Darker muted purple */
-    --muted-foreground: 285 10% 70%; /* Lighter muted text */
+    --muted: 270 25% 25%; /* Muted dark purple */
+    --muted-foreground: 270 15% 65%; /* Lighter muted purple text */
 
-    --accent: 183 100% 74%; /* #7DF9FF - Electric blue */
-    --accent-foreground: 183 100% 20%; /* Darker blue/black text on accent */
+    --accent: 330 95% 65%; /* Bright Pink */
+    --accent-foreground: 330 40% 15%; /* Dark contrast for pink */
     
-    --destructive: 0 72% 51%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 285 50% 15%; /* Slightly lighter border than card */
-    --input: 285 50% 15%; /* Input background, same as border */
-    --ring: 183 100% 74%; /* Accent color for focus rings */
+    --border: 270 30% 22%; /* Purple border */
+    --input: 270 30% 22%; /* Purple input background */
+    --ring: 330 95% 65%; /* Pink for focus rings */
     
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 320 80% 70%; /* Pink */
+    --chart-2: 270 70% 65%; /* Violet */
+    --chart-3: 300 75% 60%; /* Magenta/Purple */
+    --chart-4: 340 85% 75%; /* Lighter Pink */
+    --chart-5: 260 65% 55%; /* Indigo/Darker Violet */
 
-    --sidebar-background: 285 70% 8%;
-    --sidebar-foreground: 285 10% 90%;
-    --sidebar-primary: 183 100% 74%;
-    --sidebar-primary-foreground: 183 100% 20%;
-    --sidebar-accent: 285 60% 15%;
-    --sidebar-accent-foreground: 285 10% 95%;
-    --sidebar-border: 285 50% 20%;
-    --sidebar-ring: 183 100% 74%;
+    --sidebar-background: 270 45% 12%;
+    --sidebar-foreground: 270 20% 90%;
+    --sidebar-primary: 330 95% 65%;
+    --sidebar-primary-foreground: 330 40% 15%;
+    --sidebar-accent: 275 50% 30%;
+    --sidebar-accent-foreground: 275 15% 95%;
+    --sidebar-border: 270 35% 25%;
+    --sidebar-ring: 330 95% 65%;
   }
 }
 
